@@ -6,8 +6,25 @@
   <title>Products — Life on a Canvas</title>
   <meta name="description" content="Browse all 13 handmade personalised products — tumblers, clocks, keychains, notebooks, passport covers, and more. Ships pan-India." />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google Analytics — replace G-XXXXXXXXXX with your real Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
+
+  <div class="announcement-bar" id="rakhi-banner">
+    <div class="container announcement-inner">
+      <span>🎀 Raksha Bandhan is <strong>August 9</strong> — order by August 2 for guaranteed delivery!</span>
+      <a class="announcement-cta" href="products.html">Shop gifts →</a>
+      <button class="announcement-close" aria-label="Dismiss" onclick="document.getElementById('rakhi-banner').style.display='none';try{localStorage.setItem('rakhi-dismissed','1');}catch(e){}">✕</button>
+    </div>
+  </div>
+  <script>if(localStorage.getItem('rakhi-dismissed'))document.getElementById('rakhi-banner').style.display='none';</script>
 
   <header class="site-header">
     <div class="container navbar">

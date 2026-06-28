@@ -516,6 +516,53 @@ textarea { min-height: 110px; resize: vertical; }
 }
 .info-card li::before { content: '✓'; color: var(--rose); font-weight: 700; flex-shrink: 0; }
 
+/* ─── ANNOUNCEMENT BAR ──────────────────────── */
+.announcement-bar {
+  background: linear-gradient(90deg, var(--rose-dark) 0%, var(--rose) 100%);
+  color: #fff;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+}
+.announcement-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+  flex-wrap: wrap;
+}
+.announcement-cta {
+  background: rgba(255,255,255,0.22);
+  border-radius: var(--r-pill);
+  padding: 0.22rem 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.announcement-cta:hover { background: rgba(255,255,255,0.38); }
+.announcement-close {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.75);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 0.2rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.announcement-close:hover { color: #fff; }
+
+/* ─── ORDER SUCCESS ─────────────────────────── */
+.order-success { text-align: center; padding: 2.5rem 1rem; }
+.order-success .s-icon { font-size: 3.5rem; margin-bottom: 0.75rem; }
+.order-success h3 { margin-bottom: 0.6rem; }
+.order-success p { color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+.order-success a { color: var(--rose-dark); text-decoration: underline; }
+.order-success .btn { margin-top: 1.5rem; }
+
 /* ─── RESPONSIVE ────────────────────────────── */
 @media (max-width: 960px) {
   .grid-4 { grid-template-columns: repeat(2,1fr); }
