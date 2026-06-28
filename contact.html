@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Life on a Canvas</title>
+  <meta name="description" content="Order handmade pieces directly through WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">Life on a Canvas</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <div class="eyebrow">Order through WhatsApp</div>
+      <h1>Place an order in a few simple steps.</h1>
+      <p class="lead">Choose a product, share your details, and the message will open directly in WhatsApp so the ordering process stays easy and personal.</p>
+    </section>
+
+    <section class="container section two-col">
+      <div class="card">
+        <h3>What to expect</h3>
+        <p>Quick responses for availability, pricing, and custom requests. The site is designed to feel calm and professional while making ordering effortless.</p>
+        <ul>
+          <li>Personalized product guidance</li>
+          <li>Fast replies through WhatsApp</li>
+          <li>Simple follow-up for delivery or pickup</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <form id="order-form">
+          <label for="name">Your name</label>
+          <input id="name" name="name" placeholder="Your name" required />
+
+          <label for="phone">WhatsApp number</label>
+          <input id="phone" name="phone" placeholder="+91 9830167714" required />
+
+          <label for="product">Product</label>
+          <select id="product" name="product">
+            <option>Tumblers</option>
+            <option>Handcrafted Clocks</option>
+            <option>Mugs</option>
+            <option>Kids Design Pen Stands</option>
+            <option>Designed Pens</option>
+            <option>Keychains</option>
+            <option>Mobile Charms</option>
+            <option>Mobile Covers</option>
+            <option>Notebooks</option>
+            <option>Kiltpins</option>
+            <option>Bag Tags</option>
+            <option>Passport Covers</option>
+            <option>Handmade Trays</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us your preferred size, quantity, or any custom request."></textarea>
+
+          <button class="btn btn-primary" style="margin-top:1rem;border:0;cursor:pointer;" type="submit">Send order on WhatsApp</button>
+          <p class="note">Photos and final pricing can be added later without changing the structure of the site.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Life on a Canvas • Ready when you are.</div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('order-form');
+    const defaultNumber = '919830167714';
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const product = document.getElementById('product').value;
+      const message = document.getElementById('message').value.trim();
+      const text = `Hello! I would like to order ${product}. My name is ${name || 'there'}. ${message ? 'Message: ' + message : ''}`.trim();
+      const number = phone || defaultNumber;
+      const url = `https://wa.me/${number.replace(/\D/g, '')}?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>

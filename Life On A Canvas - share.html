@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life on a Canvas</title>
+  <meta name="description" content="A polished handmade storefront for artwork, gifts, and accessories." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="#top">Life on a Canvas</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#order">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="container hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Original handmade creations</div>
+        <h1>Beautifully crafted pieces for gifting, decorating, and everyday use.</h1>
+        <p class="lead">A warm, polished collection of handmade accessories and decorative pieces designed to feel thoughtful and timeless.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#products">Browse collection</a>
+          <a class="btn btn-secondary" href="#order">Order on WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-content">
+          <span>Featured this season</span>
+          <h3>Handcrafted trays, tumblers, clocks, and more</h3>
+          <p>Each item is made to feel personal, elegant, and gift-worthy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <div class="section-intro">
+        <h2>About the collection</h2>
+        <p class="section-copy">This collection brings together practical pieces and decorative objects created with a strong sense of style, warmth, and personal expression.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-thumb">Crafted with care</div>
+          <h3>Thoughtfully handmade</h3>
+          <p>Every product is made to feel meaningful, distinctive, and personal.</p>
+        </article>
+        <article class="card">
+          <div class="card-thumb">Gift-ready</div>
+          <h3>Perfect for gifting</h3>
+          <p>These pieces are ideal for birthdays, celebrations, and thoughtful surprises.</p>
+        </article>
+        <article class="card">
+          <div class="card-thumb">Easy to order</div>
+          <h3>Simple WhatsApp ordering</h3>
+          <p>Customers can inquire or order directly in a few simple steps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="container section">
+      <div class="section-intro">
+        <h2>Featured products</h2>
+        <p class="section-copy">A curated selection of the most-loved categories, ready to expand as new pieces are added.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-thumb">Tumblers</div>
+          <h3>Tumblers</h3>
+          <p>Stylish and practical pieces for everyday use and gifting.</p>
+          <div class="price">Price to be finalized</div>
+        </article>
+        <article class="card">
+          <div class="card-thumb">Clocks</div>
+          <h3>Handcrafted Clocks</h3>
+          <p>Warm decorative accents that bring personality to a room.</p>
+          <div class="price">Price to be finalized</div>
+        </article>
+        <article class="card">
+          <div class="card-thumb">Mugs</div>
+          <h3>Mugs</h3>
+          <p>Everyday essentials with a refined handmade touch.</p>
+          <div class="price">Price to be finalized</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="order" class="container section">
+      <div class="two-col">
+        <div>
+          <h2>Order through WhatsApp</h2>
+          <p class="section-copy">Choose a product and send your details instantly. The experience has been kept simple so you can focus on the art and the customer experience.</p>
+          <div class="card">
+            <h3>What to expect</h3>
+            <ul>
+              <li>Quick replies for availability and pricing</li>
+              <li>Personalized guidance for custom requests</li>
+              <li>Simple follow-up for delivery or pickup</li>
+            </ul>
+          </div>
+        </div>
+
+        <form id="order-form" class="form-card">
+          <label for="name">Your name</label>
+          <input id="name" name="name" placeholder="Your name" required />
+
+          <label for="phone">WhatsApp number</label>
+          <input id="phone" name="phone" placeholder="+91 9830167714" required />
+
+          <label for="product">Product</label>
+          <select id="product" name="product">
+            <option>Tumblers</option>
+            <option>Handcrafted Clocks</option>
+            <option>Mugs</option>
+            <option>Kids Design Pen Stands</option>
+            <option>Designed Pens</option>
+            <option>Keychains</option>
+            <option>Mobile Charms</option>
+            <option>Mobile Covers</option>
+            <option>Notebooks</option>
+            <option>Kiltpins</option>
+            <option>Bag Tags</option>
+            <option>Passport Covers</option>
+            <option>Handmade Trays</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us your preferred size, quantity, or any custom request."></textarea>
+
+          <button class="btn btn-primary" style="margin-top:1rem;border:0;cursor:pointer;" type="submit">Send order on WhatsApp</button>
+          <p class="note">Photos and finalized prices can be added later without changing the structure of the site.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Life on a Canvas • Crafted for beauty, made for gifting.</div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('order-form');
+    const defaultNumber = '919830167714';
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const product = document.getElementById('product').value;
+      const message = document.getElementById('message').value.trim();
+      const text = `Hello! I would like to order ${product}. My name is ${name || 'there'}. ${message ? 'Message: ' + message : ''}`.trim();
+      const number = phone || defaultNumber;
+      const url = `https://wa.me/${number.replace(/\D/g, '')}?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
