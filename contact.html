@@ -3,94 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Life on a Canvas</title>
-  <meta name="description" content="Order handmade pieces directly through WhatsApp." />
+  <title>Contact &amp; Order — Life on a Canvas</title>
+  <meta name="description" content="Order handmade personalised gifts directly through WhatsApp. Ships pan-India in 5–7 days." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container navbar">
       <a class="brand" href="index.html">Life on a Canvas</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="container section">
-      <div class="eyebrow">Order through WhatsApp</div>
-      <h1>Place an order in a few simple steps.</h1>
-      <p class="lead">Choose a product, share your details, and the message will open directly in WhatsApp so the ordering process stays easy and personal.</p>
+
+    <section class="container page-hero">
+      <div class="eyebrow">Place an order</div>
+      <h1>Order on WhatsApp</h1>
+      <p class="lead">Fill in your details below and we'll open a WhatsApp chat with your message ready to send — ordering couldn't be simpler.</p>
     </section>
 
-    <section class="container section two-col">
-      <div class="card">
-        <h3>What to expect</h3>
-        <p>Quick responses for availability, pricing, and custom requests. The site is designed to feel calm and professional while making ordering effortless.</p>
-        <ul>
-          <li>Personalized product guidance</li>
-          <li>Fast replies through WhatsApp</li>
-          <li>Simple follow-up for delivery or pickup</li>
-        </ul>
-      </div>
+    <section class="container section" style="padding-top:0;">
+      <div class="two-col">
 
-      <div class="form-card">
-        <form id="order-form">
-          <label for="name">Your name</label>
-          <input id="name" name="name" placeholder="Your name" required />
+        <!-- LEFT: INFO -->
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+          <div class="info-card">
+            <h3>What to expect</h3>
+            <ul>
+              <li>Quick replies on availability and pricing</li>
+              <li>Personalised guidance for custom requests</li>
+              <li>Payment via UPI or bank transfer</li>
+              <li>Pan-India delivery in 5–7 business days</li>
+              <li>Gift-ready packaging on every order</li>
+            </ul>
+          </div>
 
-          <label for="phone">WhatsApp number</label>
-          <input id="phone" name="phone" placeholder="+91 9830167714" required />
+          <div class="trust-strip" style="padding:1.5rem;">
+            <div class="trust-grid" style="grid-template-columns:1fr; gap:1rem;">
+              <div class="trust-item" style="display:flex; align-items:flex-start; gap:1rem; text-align:left;">
+                <div class="t-icon">🚚</div>
+                <div>
+                  <strong>Ships pan-India</strong>
+                  <p>Delivered in 5–7 business days after production.</p>
+                </div>
+              </div>
+              <div class="trust-item" style="display:flex; align-items:flex-start; gap:1rem; text-align:left;">
+                <div class="t-icon">💳</div>
+                <div>
+                  <strong>UPI &amp; bank transfer</strong>
+                  <p>Payment details shared on WhatsApp post-confirmation.</p>
+                </div>
+              </div>
+              <div class="trust-item" style="display:flex; align-items:flex-start; gap:1rem; text-align:left;">
+                <div class="t-icon">🎀</div>
+                <div>
+                  <strong>Gift-ready packaging</strong>
+                  <p>Every order is packed beautifully, ready to give.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <label for="product">Product</label>
-          <select id="product" name="product">
-            <option>Tumblers</option>
-            <option>Handcrafted Clocks</option>
-            <option>Mugs</option>
-            <option>Kids Design Pen Stands</option>
-            <option>Designed Pens</option>
-            <option>Keychains</option>
-            <option>Mobile Charms</option>
-            <option>Mobile Covers</option>
-            <option>Notebooks</option>
-            <option>Kiltpins</option>
-            <option>Bag Tags</option>
-            <option>Passport Covers</option>
-            <option>Handmade Trays</option>
-          </select>
+          <div style="text-align:center;">
+            <p style="font-size:0.85rem; color:var(--muted); margin-bottom:0.75rem;">Or reach out directly on WhatsApp</p>
+            <a class="btn btn-wa" href="https://wa.me/919830167714" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 0C5.374 0 0 5.373 0 12c0 2.116.554 4.103 1.523 5.824L.057 23.94l6.304-1.653A11.944 11.944 0 0012.004 24C18.629 24 24 18.627 24 12S18.629 0 12.004 0zm0 21.818a9.814 9.814 0 01-4.999-1.37l-.36-.213-3.721.975.994-3.62-.235-.373a9.79 9.79 0 01-1.5-5.217c0-5.418 4.411-9.818 9.821-9.818 5.413 0 9.818 4.4 9.818 9.818 0 5.415-4.405 9.818-9.818 9.818z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell us your preferred size, quantity, or any custom request."></textarea>
+        <!-- RIGHT: FORM -->
+        <div class="form-card">
+          <h3 style="margin-bottom:1.25rem;">Send your order</h3>
+          <form id="order-form">
+            <label for="name">Your name *</label>
+            <input id="name" name="name" type="text" placeholder="e.g. Priya Sharma" required />
 
-          <button class="btn btn-primary" style="margin-top:1rem;border:0;cursor:pointer;" type="submit">Send order on WhatsApp</button>
-          <p class="note">Photos and final pricing can be added later without changing the structure of the site.</p>
-        </form>
+            <label for="phone">Your WhatsApp number *</label>
+            <input id="phone" name="phone" type="tel" placeholder="e.g. 9876543210" required />
+
+            <label for="product">Product</label>
+            <select id="product" name="product">
+              <option value="Personalised Tumbler">Personalised Tumbler — ₹599</option>
+              <option value="Handpainted Mug">Handpainted Mug — ₹399</option>
+              <option value="Handcrafted Clock">Handcrafted Clock — ₹899</option>
+              <option value="Handmade Tray">Handmade Tray — ₹699</option>
+              <option value="Kids Pen Stand">Kids Pen Stand — ₹299</option>
+              <option value="Designed Pen">Designed Pen — ₹149</option>
+              <option value="Notebook">Notebook — ₹249</option>
+              <option value="Keychain">Keychain — ₹99</option>
+              <option value="Mobile Charm">Mobile Charm — ₹149</option>
+              <option value="Bag Tag">Bag Tag — ₹199</option>
+              <option value="Kiltpin">Kiltpin — ₹99</option>
+              <option value="Mobile Cover">Mobile Cover — ₹349</option>
+              <option value="Passport Cover">Passport Cover — ₹349</option>
+            </select>
+
+            <label for="personalisation">Personalisation details</label>
+            <input id="personalisation" name="personalisation" type="text" placeholder="e.g. Name to print: Arjun, Favourite colour: blue" />
+
+            <label for="message">Anything else?</label>
+            <textarea id="message" name="message" placeholder="Quantity, occasion, special requests, delivery deadline..."></textarea>
+
+            <button class="btn btn-wa" type="submit" style="width:100%; margin-top:1.25rem; justify-content:center; font-size:0.95rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 0C5.374 0 0 5.373 0 12c0 2.116.554 4.103 1.523 5.824L.057 23.94l6.304-1.653A11.944 11.944 0 0012.004 24C18.629 24 24 18.627 24 12S18.629 0 12.004 0zm0 21.818a9.814 9.814 0 01-4.999-1.37l-.36-.213-3.721.975.994-3.62-.235-.373a9.79 9.79 0 01-1.5-5.217c0-5.418 4.411-9.818 9.821-9.818 5.413 0 9.818 4.4 9.818 9.818 0 5.415-4.405 9.818-9.818 9.818z"/></svg>
+              Send on WhatsApp
+            </button>
+            <p class="form-note">This will open WhatsApp with your message pre-filled and send it to our number (+91 98301 67714). We'll reply within a few hours!</p>
+          </form>
+        </div>
+
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">Life on a Canvas • Ready when you are.</div>
+    <div class="container footer-inner">
+      <span class="footer-brand">Life on a Canvas</span>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span class="footer-copy">Handmade with love &bull; Ships pan-India</span>
+    </div>
   </footer>
 
   <script>
-    const form = document.getElementById('order-form');
-    const defaultNumber = '919830167714';
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const product = document.getElementById('product').value;
-      const message = document.getElementById('message').value.trim();
-      const text = `Hello! I would like to order ${product}. My name is ${name || 'there'}. ${message ? 'Message: ' + message : ''}`.trim();
-      const number = phone || defaultNumber;
-      const url = `https://wa.me/${number.replace(/\D/g, '')}?text=${encodeURIComponent(text)}`;
-      window.open(url, '_blank', 'noopener,noreferrer');
+    const SELLER = '919830167714';
+    document.getElementById('order-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name          = document.getElementById('name').value.trim();
+      const phone         = document.getElementById('phone').value.trim();
+      const product       = document.getElementById('product').value;
+      const personal      = document.getElementById('personalisation').value.trim();
+      const msg           = document.getElementById('message').value.trim();
+
+      let text = `Hi! I'd like to order from Life on a Canvas.`;
+      text += `\n\n*Product:* ${product}`;
+      text += `\n*My name:* ${name || 'Not provided'}`;
+      text += `\n*My WhatsApp:* ${phone || 'Not provided'}`;
+      if (personal) text += `\n*Personalisation:* ${personal}`;
+      if (msg)      text += `\n*Note:* ${msg}`;
+
+      window.open(`https://wa.me/${SELLER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
     });
   </script>
+
 </body>
 </html>

@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Life on a Canvas</title>
-  <meta name="description" content="Learn more about the story behind the collection." />
+  <title>About — Life on a Canvas</title>
+  <meta name="description" content="The story behind Life on a Canvas — handmade personalised gifts for kids and families, crafted with love." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container navbar">
       <a class="brand" href="index.html">Life on a Canvas</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html" class="active">About</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -21,48 +27,122 @@
   </header>
 
   <main>
-    <section class="container hero">
-      <div>
-        <div class="eyebrow">About the collection</div>
-        <h1>A story of creativity, care, and beautifully made everyday objects.</h1>
-        <p class="lead">This collection brings together practical pieces and decorative objects created with a strong sense of style, warmth, and personal expression. A short artist story can be placed here once you are ready.</p>
-        <div class="button-row">
-          <a class="btn btn-primary" href="products.html">View the collection</a>
-          <a class="btn btn-secondary" href="contact.html">Ask about custom orders</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="hero-card-content">
-          <span>Artist story</span>
-          <h3>To be added soon</h3>
-          <p>Replace this section with a personal note about your mother and her creative journey.</p>
+
+    <!-- PAGE HERO -->
+    <section class="container page-hero">
+      <div class="eyebrow">Our story</div>
+      <h1>Made by hand, given with heart.</h1>
+      <p class="lead">Life on a Canvas is a small handmade gift studio creating personalised pieces for kids and families — each one made to be treasured.</p>
+    </section>
+
+    <!-- STORY + VISUAL -->
+    <section class="container section" style="padding-top:0;">
+      <div class="two-col" style="grid-template-columns:0.9fr 1.1fr; align-items:center;">
+        <div class="about-visual">🎨</div>
+        <div>
+          <h2>A creative passion, turned into something special</h2>
+          <p style="color:var(--muted); margin-top:0.75rem; line-height:1.8;">What started as a love for handcrafting grew into a small studio dedicated to making gifts that feel genuinely personal. Every tumbler, clock, keychain, and tray that leaves our studio has been made by hand — decorated, finished, and packed with care.</p>
+          <p style="color:var(--muted); margin-top:0.75rem; line-height:1.8;">We believe a gift should feel like it was made for the person receiving it. That's why we personalise everything — with names, favourite characters, colours, or designs chosen just for them. Whether it's a birthday, a school farewell, or just because — we'll help you find the perfect piece.</p>
+          <div class="button-row" style="margin-top:1.5rem;">
+            <a class="btn btn-primary" href="products.html">Browse the collection</a>
+            <a class="btn btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Life%20on%20a%20Canvas." target="_blank" rel="noopener noreferrer">Chat with us</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- VALUES -->
     <section class="container section">
-      <div class="grid">
-        <article class="card">
-          <div class="card-thumb">Crafted with intention</div>
-          <h3>Crafted with intention</h3>
-          <p>Every product is made to feel special, whether it is used daily or gifted to someone dear.</p>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Balanced and elegant</div>
-          <h3>Balanced and elegant</h3>
-          <p>The visual style stays calm and polished, with warm tones and a refined presentation.</p>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Always growing</div>
-          <h3>Always growing</h3>
-          <p>New products can be added easily as the collection expands and evolves.</p>
-        </article>
+      <div class="section-header">
+        <h2>What makes us different</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="feature-icon">✋</div>
+          <h3>100% handmade</h3>
+          <p>Every single product is made by hand — no machinery, no shortcuts. Just genuine craft and attention to detail in each piece.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">💌</div>
+          <h3>Truly personalised</h3>
+          <p>Your child's name, favourite colour, or a special design request — we make it happen. No two pieces are exactly the same.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">🎁</div>
+          <h3>Gift-ready always</h3>
+          <p>Every order is packed beautifully and is ready to gift straight out of the box — no extra wrapping needed.</p>
+        </div>
       </div>
     </section>
+
+    <!-- VALUES DETAILED -->
+    <section class="container section" style="padding-top:0;">
+      <div class="two-col">
+        <div>
+          <h2>A note on our process</h2>
+          <p style="color:var(--muted); margin-top:0.6rem; line-height:1.8;">Every order starts with a conversation. We want to understand who the gift is for, what they love, and what would make them smile when they open it. Then we get to work — painting, crafting, personalising — until it's ready to go.</p>
+          <p style="color:var(--muted); margin-top:0.75rem; line-height:1.8;">Because everything is made to order, please allow 3–5 days for production before shipping. Delivery then takes another 5–7 business days, so plan ahead for special occasions!</p>
+        </div>
+        <div>
+          <div class="value-list">
+            <div class="value-item">
+              <div class="value-icon">📋</div>
+              <div class="value-text">
+                <strong>You place the order on WhatsApp</strong>
+                <p>Tell us what you'd like and any personalisation details.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🎨</div>
+              <div class="value-text">
+                <strong>We handcraft your piece</strong>
+                <p>Made fresh for you — usually ready in 3–5 business days.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">💳</div>
+              <div class="value-text">
+                <strong>Payment via UPI or bank transfer</strong>
+                <p>Shared on WhatsApp once your order is confirmed.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🚚</div>
+              <div class="value-text">
+                <strong>Shipped to your door</strong>
+                <p>Pan-India delivery in 5–7 business days with tracking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container section" style="padding-top:0;">
+      <div class="card" style="text-align:center; padding:2.5rem 2rem; background:linear-gradient(135deg,var(--lavender) 0%,var(--cream) 60%,var(--peach) 100%);">
+        <h2 style="margin-bottom:0.5rem;">Let's make something beautiful together</h2>
+        <p style="color:var(--muted); margin-bottom:1.5rem;">Browse the collection or start a conversation on WhatsApp — we'd love to create something special for you.</p>
+        <div class="button-row" style="justify-content:center;">
+          <a class="btn btn-primary" href="products.html">See all products</a>
+          <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">Life on a Canvas • Crafted with heart, shared with love.</div>
+    <div class="container footer-inner">
+      <span class="footer-brand">Life on a Canvas</span>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span class="footer-copy">Handmade with love &bull; Ships pan-India</span>
+    </div>
   </footer>
+
 </body>
 </html>

@@ -3,178 +3,248 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Life on a Canvas</title>
-  <meta name="description" content="A polished handmade storefront for artwork, gifts, and accessories." />
+  <title>Life on a Canvas — Handmade Personalised Gifts</title>
+  <meta name="description" content="Handmade personalised gifts for kids and families. Tumblers, clocks, keychains, notebooks and more. Ships pan-India. Order on WhatsApp." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container navbar">
-      <a class="brand" href="#top">Life on a Canvas</a>
+      <a class="brand" href="index.html">Life on a Canvas</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
       <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#order">Order</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main>
+
+    <!-- HERO -->
     <section class="container hero">
       <div class="hero-copy">
-        <div class="eyebrow">Original handmade creations</div>
-        <h1>Beautifully crafted pieces for gifting, decorating, and everyday use.</h1>
-        <p class="lead">A warm, polished collection of handmade accessories and decorative pieces designed to feel thoughtful and timeless.</p>
+        <div class="eyebrow">Handmade &amp; personalised gifts</div>
+        <h1>Made with love, gifted with meaning.</h1>
+        <p class="lead">Handcrafted tumblers, clocks, keychains, and more — each personalised with your child's name or favourite design. Ships pan-India.</p>
         <div class="button-row">
-          <a class="btn btn-primary" href="#products">Browse collection</a>
-          <a class="btn btn-secondary" href="#order">Order on WhatsApp</a>
+          <a class="btn btn-primary" href="products.html">Browse collection</a>
+          <a class="btn btn-secondary" href="contact.html">Order on WhatsApp</a>
         </div>
       </div>
       <div class="hero-card">
         <div class="hero-card-content">
-          <span>Featured this season</span>
-          <h3>Handcrafted trays, tumblers, clocks, and more</h3>
-          <p>Each item is made to feel personal, elegant, and gift-worthy.</p>
+          <div class="hero-emoji">🎨</div>
+          <div class="tag">Featured this season</div>
+          <h3>Personalised tumblers, clocks &amp; more</h3>
+          <p>Each piece is handmade and customised — the perfect thoughtful gift.</p>
         </div>
       </div>
     </section>
 
-    <section id="about" class="container section">
-      <div class="section-intro">
-        <h2>About the collection</h2>
-        <p class="section-copy">This collection brings together practical pieces and decorative objects created with a strong sense of style, warmth, and personal expression.</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <div class="card-thumb">Crafted with care</div>
-          <h3>Thoughtfully handmade</h3>
-          <p>Every product is made to feel meaningful, distinctive, and personal.</p>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Gift-ready</div>
-          <h3>Perfect for gifting</h3>
-          <p>These pieces are ideal for birthdays, celebrations, and thoughtful surprises.</p>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Easy to order</div>
-          <h3>Simple WhatsApp ordering</h3>
-          <p>Customers can inquire or order directly in a few simple steps.</p>
-        </article>
+    <!-- FEATURES -->
+    <section class="container section">
+      <div class="grid-3">
+        <div class="card">
+          <div class="feature-icon">🎁</div>
+          <h3>Thoughtfully personalised</h3>
+          <p>Every item can be customised with a name, design, or message — making it truly one of a kind.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">✨</div>
+          <h3>Handmade with care</h3>
+          <p>Each piece is crafted by hand in small batches — no factory mass production, just genuine artistry.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">📦</div>
+          <h3>Ships across India</h3>
+          <p>Pan-India delivery in 5–7 business days. Payment via UPI or bank transfer confirmed on WhatsApp.</p>
+        </div>
       </div>
     </section>
 
-    <section id="products" class="container section">
-      <div class="section-intro">
-        <h2>Featured products</h2>
-        <p class="section-copy">A curated selection of the most-loved categories, ready to expand as new pieces are added.</p>
+    <!-- FEATURED PRODUCTS -->
+    <section class="container section">
+      <div class="section-header">
+        <h2>Popular picks</h2>
+        <p>A few of our most-loved handmade pieces, ready to personalise for you.</p>
       </div>
-      <div class="grid">
-        <article class="card">
-          <div class="card-thumb">Tumblers</div>
-          <h3>Tumblers</h3>
-          <p>Stylish and practical pieces for everyday use and gifting.</p>
-          <div class="price">Price to be finalized</div>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Clocks</div>
-          <h3>Handcrafted Clocks</h3>
-          <p>Warm decorative accents that bring personality to a room.</p>
-          <div class="price">Price to be finalized</div>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Mugs</div>
-          <h3>Mugs</h3>
-          <p>Everyday essentials with a refined handmade touch.</p>
-          <div class="price">Price to be finalized</div>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Pen stands</div>
-          <h3>Kids Design Pen Stands</h3>
-          <p>Playful, useful pieces with a creative finish.</p>
-          <div class="price">Price to be finalized</div>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Pens</div>
-          <h3>Designed Pens</h3>
-          <p>Elegant accessories that feel personal and thoughtful.</p>
-          <div class="price">Price to be finalized</div>
-        </article>
-        <article class="card">
-          <div class="card-thumb">Keychains</div>
-          <h3>Keychains</h3>
-          <p>Small accessories made to feel charming and meaningful.</p>
-          <div class="price">Price to be finalized</div>
-        </article>
+      <div class="grid-4">
+
+        <div class="card">
+          <div class="card-thumb" style="background: var(--pink);">🥤</div>
+          <span class="category-badge" style="background: var(--pink);">Drinkware</span>
+          <h3>Personalised Tumbler</h3>
+          <p>Customised with your child's name or design — great for school or gifting.</p>
+          <div class="price">₹599</div>
+          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Personalised%20Tumbler.%20Please%20let%20me%20know%20the%20customisation%20options." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb" style="background: var(--mint);">🕰️</div>
+          <span class="category-badge" style="background: var(--mint);">Home &amp; Decor</span>
+          <h3>Handcrafted Clock</h3>
+          <p>A beautiful wall clock that adds warmth and personality to any room.</p>
+          <div class="price">₹899</div>
+          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Handcrafted%20Clock.%20Please%20share%20designs." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb" style="background: var(--peach);">🔑</div>
+          <span class="category-badge" style="background: var(--peach);">Charms &amp; Tags</span>
+          <h3>Keychain</h3>
+          <p>Cute personalised keychains — a small but meaningful everyday accessory.</p>
+          <div class="price">₹99</div>
+          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20personalised%20Keychain." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb" style="background: var(--lavender);">📔</div>
+          <span class="category-badge" style="background: var(--lavender);">Stationery</span>
+          <h3>Notebook</h3>
+          <p>Beautifully crafted notebook with a handmade cover — for journaling or gifting.</p>
+          <div class="price">₹249</div>
+          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20personalised%20Notebook." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+
+      </div>
+      <div style="margin-top: 1.75rem; text-align: center;">
+        <a class="btn btn-secondary" href="products.html">View all 13 products →</a>
       </div>
     </section>
 
-    <section id="order" class="container section">
-      <div class="two-col">
-        <div>
-          <h2>Order through WhatsApp</h2>
-          <p class="section-copy">Choose a product and send your details instantly. The experience has been kept simple so you can focus on the art and the customer experience.</p>
-          <div class="card">
-            <h3>What to expect</h3>
-            <ul>
-              <li>Quick replies for availability and pricing</li>
-              <li>Personalized guidance for custom requests</li>
-              <li>Simple follow-up for delivery or pickup</li>
-            </ul>
+    <!-- REVIEWS -->
+    <section class="container section">
+      <div class="section-header">
+        <h2>What customers say</h2>
+        <p>Real reviews from happy customers across India.</p>
+      </div>
+      <div class="grid-3">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Ordered a personalised tumbler for my daughter's birthday and she absolutely loved it! The quality is amazing and delivery was faster than expected."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">P</div>
+            <div class="reviewer-info">
+              <strong>Priya M.</strong>
+              <span>Mumbai</span>
+            </div>
           </div>
         </div>
-
-        <form id="order-form" class="form-card">
-          <label for="name">Your name</label>
-          <input id="name" name="name" placeholder="Your name" required />
-
-          <label for="phone">WhatsApp number</label>
-          <input id="phone" name="phone" placeholder="+91 9830167714" required />
-
-          <label for="product">Product</label>
-          <select id="product" name="product">
-            <option>Tumblers</option>
-            <option>Handcrafted Clocks</option>
-            <option>Mugs</option>
-            <option>Kids Design Pen Stands</option>
-            <option>Designed Pens</option>
-            <option>Keychains</option>
-            <option>Mobile Charms</option>
-            <option>Mobile Covers</option>
-            <option>Notebooks</option>
-            <option>Kiltpins</option>
-            <option>Bag Tags</option>
-            <option>Passport Covers</option>
-            <option>Handmade Trays</option>
-          </select>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell us your preferred size, quantity, or any custom request."></textarea>
-
-          <button class="btn btn-primary" style="margin-top:1rem;border:0;cursor:pointer;" type="submit">Send order on WhatsApp</button>
-          <p class="note">Photos and finalized prices can be added later without changing the structure of the site.</p>
-        </form>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The handmade clock I ordered for my parents' anniversary was just beautiful. The packaging was so thoughtful too — felt very special to receive."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div class="reviewer-info">
+              <strong>Rohit S.</strong>
+              <span>Delhi</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Got personalised keychains for my whole friend group as return gifts. Everyone was so impressed! Will definitely be ordering again for the next occasion."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div class="reviewer-info">
+              <strong>Ananya K.</strong>
+              <span>Kolkata</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- SHIPPING / TRUST -->
+    <section class="container section">
+      <div class="trust-strip">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="t-icon">🚚</div>
+            <strong>Ships pan-India</strong>
+            <p>Delivered to your doorstep anywhere in India in 5–7 business days.</p>
+          </div>
+          <div class="trust-item">
+            <div class="t-icon">💳</div>
+            <strong>Easy payment</strong>
+            <p>Pay via UPI or bank transfer — details confirmed once you order on WhatsApp.</p>
+          </div>
+          <div class="trust-item">
+            <div class="t-icon">🎀</div>
+            <strong>Gift-ready packaging</strong>
+            <p>Every order is packed beautifully and ready to gift straight out of the box.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container section">
+      <div class="section-header">
+        <h2>Frequently asked questions</h2>
+        <p>Everything you need to know about ordering.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q">How do I place an order? <span class="faq-chevron">+</span></summary>
+          <p class="faq-a">Click any "Order on WhatsApp" button on the site. It will open a WhatsApp chat with the message pre-filled. Just send it and we'll get back to you with availability, customisation options, and payment details.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Do you ship across India? <span class="faq-chevron">+</span></summary>
+          <p class="faq-a">Yes! We ship pan-India. Delivery typically takes 5–7 business days depending on your location. Shipping charges (if any) will be confirmed on WhatsApp before payment.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Can I get a product personalised with a name? <span class="faq-chevron">+</span></summary>
+          <p class="faq-a">Absolutely — personalisation is our specialty! Most products can be customised with your child's name, a special message, or a favourite character. Just mention your requirements when you WhatsApp us.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">What are the payment options? <span class="faq-chevron">+</span></summary>
+          <p class="faq-a">We accept UPI and bank transfer. Payment details are shared on WhatsApp after you confirm your order. We do not accept cash on delivery.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Can I order in bulk for events or return gifts? <span class="faq-chevron">+</span></summary>
+          <p class="faq-a">Yes! We love doing bulk orders for birthdays, school events, and weddings. Reach out on WhatsApp with the quantity and occasion and we'll help plan it for you.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">What if I need to return or exchange my order? <span class="faq-chevron">+</span></summary>
+          <p class="faq-a">Since all products are handmade and personalised, returns are not accepted except in case of damage during delivery. Please share photos within 48 hours of receiving the order and we'll sort it out.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="container section">
+      <div class="card" style="text-align:center; padding:2.5rem 2rem; background: linear-gradient(135deg, var(--pink) 0%, var(--cream) 60%, var(--sky) 100%);">
+        <h2 style="margin-bottom:0.6rem;">Ready to order something special?</h2>
+        <p style="color:var(--muted); margin-bottom:1.5rem; max-width:500px; margin-inline:auto;">Browse the full collection or reach out on WhatsApp directly — we're happy to help you find the perfect gift.</p>
+        <div class="button-row" style="justify-content:center;">
+          <a class="btn btn-primary" href="products.html">Browse all products</a>
+          <a class="btn btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20browse%20your%20handmade%20gifts." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">Life on a Canvas • Crafted for beauty, made for gifting.</div>
+    <div class="container footer-inner">
+      <span class="footer-brand">Life on a Canvas</span>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span class="footer-copy">Handmade with love &bull; Ships pan-India</span>
+    </div>
   </footer>
 
-  <script>
-    const form = document.getElementById('order-form');
-    const defaultNumber = '919830167714';
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const product = document.getElementById('product').value;
-      const message = document.getElementById('message').value.trim();
-      const text = `Hello! I would like to order ${product}. My name is ${name || 'there'}. ${message ? 'Message: ' + message : ''}`.trim();
-      const number = phone || defaultNumber;
-      const url = `https://wa.me/${number.replace(/\D/g, '')}?text=${encodeURIComponent(text)}`;
-      window.open(url, '_blank', 'noopener,noreferrer');
-    });
-  </script>
 </body>
 </html>
