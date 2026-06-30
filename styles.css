@@ -231,7 +231,8 @@ h3 { font-size: 1.05rem; margin-bottom: 0.35rem; }
   opacity: 0; transition: opacity var(--med) var(--ease); color: #fff; font-size: 1.2rem;
 }
 .insta-tile:hover .insta-tile-overlay { opacity: 1; }
-.instagram-handle { font-family: 'Quicksand', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--muted); margin-bottom: 0.5rem; }
+.instagram-handle { font-family: 'Quicksand', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--rose-dark); margin-bottom: 0.5rem; display: inline-block; text-decoration: none; transition: color var(--fast); }
+.instagram-handle:hover { color: var(--rose); }
 
 /* ── FAQ ──────────────────────────────────────── */
 .faq-list { display: flex; flex-direction: column; gap: 0.65rem; }
