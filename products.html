@@ -323,7 +323,7 @@
             <h4>🧼 Care</h4>
             <p id="modal-care"></p>
           </div>
-          <button class="btn btn-cart" id="modal-add-btn" style="width:100%;justify-content:center;margin-top:1.25rem;" data-add-to-cart>+ Add to cart</button>
+          <button class="btn btn-cart" id="modal-add-btn" style="width:100%;justify-content:center;margin-top:1.25rem;">+ Add to cart</button>
         </div>
       </div>
     </div>
@@ -542,6 +542,10 @@
       addBtn.className = 'btn btn-cart';
       addBtn.style.cssText = 'width:100%;justify-content:center;margin-top:1.25rem;';
       addBtn.textContent = '+ Add to cart';
+      addBtn.onclick = () => {
+        closeModal();
+        if (window.__loac) window.__loac.addToCart(name, d.price, d.category);
+      };
 
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
