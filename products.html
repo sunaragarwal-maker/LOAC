@@ -4,10 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products — Life on a Canvas</title>
-  <meta name="description" content="Browse all handmade personalised products — charms, keychains, pen stands, bags and more. Ships pan-India." />
+  <meta name="description" content="Browse all handmade personalised products — charms, keychains, bags, pen stands and more. Ships pan-India." />
   <link rel="stylesheet" href="styles.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  <style>
+    .card-thumb { position: relative; }
+    .qv-btn {
+      position: absolute; bottom: 0.65rem; left: 50%; transform: translateX(-50%) translateY(6px);
+      background: rgba(255,255,255,0.97); border: 1.5px solid var(--border-strong);
+      border-radius: var(--r-pill); padding: 0.38rem 1rem; font-size: 0.76rem; font-weight: 700;
+      cursor: pointer; white-space: nowrap; opacity: 0; pointer-events: none;
+      transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
+      font-family: 'Nunito', sans-serif; color: var(--ink); box-shadow: var(--shadow-sm);
+    }
+    .card:hover .qv-btn { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: all; }
+  </style>
 </head>
 <body>
 
@@ -60,7 +72,10 @@
 
         <!-- CHARMS & TAGS -->
         <div class="card product-card" data-cat="Charms and Tags">
-          <div class="card-thumb"><img src="images/mobile-charm-evileye.jpg" alt="Handmade Mobile Charm" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/mobile-charm-evileye.jpg" alt="Handmade Mobile Charm" loading="lazy">
+            <button class="qv-btn" data-qv="Mobile Charm">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Mobile Charm</h3>
           <p>Handmade beaded phone charms — colourful, unique, and totally addictive.</p>
@@ -69,7 +84,10 @@
         </div>
 
         <div class="card product-card" data-cat="Charms and Tags">
-          <div class="card-thumb"><img src="images/keychain-name.jpg" alt="Personalised name keychain" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/keychain-name.jpg" alt="Personalised name keychain" loading="lazy">
+            <button class="qv-btn" data-qv="Keychain">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Keychain</h3>
           <p>Personalised keychains with your name or initials in wooden letter beads.</p>
@@ -78,7 +96,10 @@
         </div>
 
         <div class="card product-card" data-cat="Charms and Tags">
-          <div class="card-thumb"><img src="images/keychain-denim.jpg" alt="Denim keychain wristlet" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/keychain-denim.jpg" alt="Denim keychain wristlet" loading="lazy">
+            <button class="qv-btn" data-qv="Keychain Wristlet">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Keychain Wristlet</h3>
           <p>Denim keychain wristlet with pearl and crystal detailing — stylish and practical.</p>
@@ -87,7 +108,10 @@
         </div>
 
         <div class="card product-card" data-cat="Charms and Tags">
-          <div class="card-thumb emoji" style="background:var(--peach);">🏷️</div>
+          <div class="card-thumb emoji" style="background:var(--peach);">
+            🏷️
+            <button class="qv-btn" data-qv="Bag Tag">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Bag Tag</h3>
           <p>Add personality to any bag with a custom handmade personalised tag.</p>
@@ -96,7 +120,10 @@
         </div>
 
         <div class="card product-card" data-cat="Charms and Tags">
-          <div class="card-thumb emoji" style="background:var(--peach);">📌</div>
+          <div class="card-thumb emoji" style="background:var(--peach);">
+            📌
+            <button class="qv-btn" data-qv="Kiltpin">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Kiltpin</h3>
           <p>Unique handmade kiltpins — a distinctive accessory for any outfit or bag.</p>
@@ -106,7 +133,10 @@
 
         <!-- STATIONERY -->
         <div class="card product-card" data-cat="Stationery">
-          <div class="card-thumb"><img src="images/pen-stand-safari.jpg" alt="Kids pen stand safari theme" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/pen-stand-safari.jpg" alt="Kids pen stand safari theme" loading="lazy">
+            <button class="qv-btn" data-qv="Kids Pen Stand">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--lavender);">Stationery</span>
           <h3>Kids Pen Stand</h3>
           <p>Transparent pen stand with cute designs and fluffy character toppers — perfect for any kid's desk.</p>
@@ -115,7 +145,10 @@
         </div>
 
         <div class="card product-card" data-cat="Stationery">
-          <div class="card-thumb"><img src="images/pen-stand-words.jpg" alt="Sparkly designed pen" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/pen-stand-words.jpg" alt="Sparkly designed pen" loading="lazy">
+            <button class="qv-btn" data-qv="Designed Pen">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--lavender);">Stationery</span>
           <h3>Designed Pen</h3>
           <p>Sparkly rhinestone pens with cute character toppers — a fun gift for any child.</p>
@@ -124,7 +157,10 @@
         </div>
 
         <div class="card product-card" data-cat="Stationery">
-          <div class="card-thumb emoji" style="background:var(--lavender);">📔</div>
+          <div class="card-thumb emoji" style="background:var(--lavender);">
+            📔
+            <button class="qv-btn" data-qv="Notebook">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--lavender);">Stationery</span>
           <h3>Notebook</h3>
           <p>Beautifully crafted notebook with a handmade cover — for journaling or gifting.</p>
@@ -134,7 +170,10 @@
 
         <!-- BAGS -->
         <div class="card product-card" data-cat="Bags">
-          <div class="card-thumb"><img src="images/bag-unicorn.jpg" alt="Pink kids mini bag unicorn patch" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/bag-unicorn.jpg" alt="Pink kids mini bag unicorn patch" loading="lazy">
+            <button class="qv-btn" data-qv="Kids Mini Bag (Pink - Unicorn)">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--pink);">Bags</span>
           <h3>Kids Mini Bag — Pink</h3>
           <p>Adorable corduroy sling bag with a sequin unicorn patch and charm accessories.</p>
@@ -143,7 +182,10 @@
         </div>
 
         <div class="card product-card" data-cat="Bags">
-          <div class="card-thumb"><img src="images/bag-cupcake.jpg" alt="Cream kids mini bag cupcake patch" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/bag-cupcake.jpg" alt="Cream kids mini bag cupcake patch" loading="lazy">
+            <button class="qv-btn" data-qv="Kids Mini Bag (Cream - Cupcake)">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--pink);">Bags</span>
           <h3>Kids Mini Bag — Cream</h3>
           <p>Sweet cream corduroy sling bag with a glitter cupcake patch and cute charm.</p>
@@ -152,7 +194,10 @@
         </div>
 
         <div class="card product-card" data-cat="Bags">
-          <div class="card-thumb"><img src="images/bag-sage.jpg" alt="Sage kids mini bag sports charm" loading="lazy"></div>
+          <div class="card-thumb">
+            <img src="images/bag-sage.jpg" alt="Sage kids mini bag sports charm" loading="lazy">
+            <button class="qv-btn" data-qv="Kids Mini Bag (Sage - Sports)">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--pink);">Bags</span>
           <h3>Kids Mini Bag — Sage</h3>
           <p>Cool sage corduroy sling bag with kiltpin detail and a sporty beaded charm.</p>
@@ -162,7 +207,10 @@
 
         <!-- DRINKWARE -->
         <div class="card product-card" data-cat="Drinkware">
-          <div class="card-thumb emoji" style="background:var(--sky);">🥤</div>
+          <div class="card-thumb emoji" style="background:var(--sky);">
+            🥤
+            <button class="qv-btn" data-qv="Personalised Tumbler">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--sky);">Drinkware</span>
           <h3>Personalised Tumbler</h3>
           <p>Customised with your child's name or favourite design. Perfect for school, travel, or gifting.</p>
@@ -171,7 +219,10 @@
         </div>
 
         <div class="card product-card" data-cat="Drinkware">
-          <div class="card-thumb emoji" style="background:var(--sky);">☕</div>
+          <div class="card-thumb emoji" style="background:var(--sky);">
+            ☕
+            <button class="qv-btn" data-qv="Handpainted Mug">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--sky);">Drinkware</span>
           <h3>Handpainted Mug</h3>
           <p>Hand-painted ceramic mug — a warm, personalised addition to any morning routine.</p>
@@ -181,7 +232,10 @@
 
         <!-- HOME & DECOR -->
         <div class="card product-card" data-cat="Home and Decor">
-          <div class="card-thumb emoji" style="background:var(--mint);">🕰️</div>
+          <div class="card-thumb emoji" style="background:var(--mint);">
+            🕰️
+            <button class="qv-btn" data-qv="Handcrafted Clock">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--mint);">Home &amp; Decor</span>
           <h3>Handcrafted Clock</h3>
           <p>A beautiful wall clock that adds warmth and personality to any room.</p>
@@ -190,17 +244,23 @@
         </div>
 
         <div class="card product-card" data-cat="Home and Decor">
-          <div class="card-thumb emoji" style="background:var(--mint);">🫙</div>
+          <div class="card-thumb emoji" style="background:var(--mint);">
+            🫙
+            <button class="qv-btn" data-qv="Handmade Tray">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--mint);">Home &amp; Decor</span>
           <h3>Handmade Tray</h3>
-          <p>A decorative serving tray with artistic detail — functional, beautiful, and gift-worthy.</p>
+          <p>A decorative tray with artistic detail — functional, beautiful, and gift-worthy.</p>
           <div class="price">₹699</div>
           <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Handmade Tray" data-price="699" data-category="Home and Decor">+ Add to cart</button>
         </div>
 
         <!-- TRAVEL -->
         <div class="card product-card" data-cat="Travel">
-          <div class="card-thumb emoji" style="background:var(--lavender);">📲</div>
+          <div class="card-thumb emoji" style="background:var(--lavender);">
+            📲
+            <button class="qv-btn" data-qv="Mobile Cover">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--lavender);">Travel</span>
           <h3>Mobile Cover</h3>
           <p>Custom-designed phone cover that blends creativity with everyday utility.</p>
@@ -209,7 +269,10 @@
         </div>
 
         <div class="card product-card" data-cat="Travel">
-          <div class="card-thumb emoji" style="background:var(--lavender);">✈️</div>
+          <div class="card-thumb emoji" style="background:var(--lavender);">
+            ✈️
+            <button class="qv-btn" data-qv="Passport Cover">Quick view</button>
+          </div>
           <span class="category-badge" style="background:var(--lavender);">Travel</span>
           <h3>Passport Cover</h3>
           <p>Stylish handmade passport cover — a perfect travel companion with artistic detail.</p>
@@ -229,32 +292,296 @@
     </section>
   </main>
 
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">✕</button>
+      <div class="modal-grid">
+        <div class="modal-img-col" id="modal-img-col"></div>
+        <div class="modal-body">
+          <span class="category-badge" id="modal-badge" style="margin-bottom:0.6rem;display:inline-block;"></span>
+          <h2 id="modal-title" style="font-size:1.3rem;margin-bottom:0.1rem;"></h2>
+          <div class="modal-price" id="modal-price"></div>
+          <p class="modal-desc" id="modal-desc"></p>
+          <hr class="modal-divider">
+          <div class="modal-section">
+            <h4>✍️ Personalisation options</h4>
+            <ul id="modal-personal-list"></ul>
+          </div>
+          <hr class="modal-divider">
+          <div class="modal-section">
+            <h4>⏱️ Production time</h4>
+            <p>3–5 business days after order confirmation.</p>
+          </div>
+          <hr class="modal-divider">
+          <div class="modal-section">
+            <h4>🚚 Shipping</h4>
+            <p>Ships pan-India in 5–7 business days after production. Payment via UPI or bank transfer confirmed on WhatsApp.</p>
+          </div>
+          <hr class="modal-divider">
+          <div class="modal-section">
+            <h4>🧼 Care</h4>
+            <p id="modal-care"></p>
+          </div>
+          <button class="btn btn-cart" id="modal-add-btn" style="width:100%;justify-content:center;margin-top:1.25rem;" data-add-to-cart>+ Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
-    <div class="container footer-inner">
-      <span class="footer-brand">Life on a Canvas</span>
-      <nav class="footer-links">
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <span class="footer-copy">Handmade with love &bull; Ships pan-India</span>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Life on a Canvas</div>
+          <p class="footer-tagline">Handmade personalised gifts, crafted with love and shipped across India.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/919830167714" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 0C5.374 0 0 5.373 0 12c0 2.116.554 4.103 1.523 5.824L.057 23.94l6.304-1.653A11.944 11.944 0 0012.004 24C18.629 24 24 18.627 24 12S18.629 0 12.004 0zm0 21.818a9.814 9.814 0 01-4.999-1.37l-.36-.213-3.721.975.994-3.62-.235-.373a9.79 9.79 0 01-1.5-5.217c0-5.418 4.411-9.818 9.821-9.818 5.413 0 9.818 4.4 9.818 9.818 0 5.415-4.405 9.818-9.818 9.818z"/></svg>
+            </a>
+            <a href="mailto:lifeonacanvas@gmail.com" class="social-icon" aria-label="Email">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,14 22,4"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="footer-col-title">Shop</span>
+          <ul class="footer-nav-list">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?cat=Bags">Kids Bags</a></li>
+            <li><a href="products.html?cat=Charms+and+Tags">Charms &amp; Tags</a></li>
+            <li><a href="products.html?cat=Stationery">Stationery</a></li>
+            <li><a href="products.html?cat=Drinkware">Drinkware</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-col-title">Info</span>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Order on WhatsApp</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer-col-title">Policies</span>
+          <ul class="footer-nav-list">
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Life on a Canvas · All rights reserved</span>
+        <span>Handmade with ❤️ · Ships pan-India</span>
+      </div>
     </div>
   </footer>
 
   <script>
-    // Category filter
+    // ── Product data for quick-view modal ──
+    const PRODUCT_DATA = {
+      "Mobile Charm": {
+        category:"Charms & Tags", catColor:"var(--peach)", price:149,
+        img:"images/mobile-charm-evileye.jpg",
+        desc:"Handmade beaded phone charms — each one unique, colourful, and crafted with tiny beads, crystals, and charm pendants. Clip it to your phone case for instant personality.",
+        personal:["Colour scheme (e.g. blue & white, pink tones)","Theme preference (e.g. evil eye, florals, initials)"],
+        care:"Avoid water. Handle gently to preserve bead strings."
+      },
+      "Keychain": {
+        category:"Charms & Tags", catColor:"var(--peach)", price:99,
+        img:"images/keychain-name.jpg",
+        desc:"Personalised keychains with your name or initials in wooden letter beads — a meaningful everyday accessory for bags, keys, or as gifts.",
+        personal:["Name or initials to feature","Colour preference for beads"],
+        care:"Wipe clean with a dry cloth. Avoid prolonged exposure to water."
+      },
+      "Keychain Wristlet": {
+        category:"Charms & Tags", catColor:"var(--peach)", price:199,
+        img:"images/keychain-denim.jpg",
+        desc:"Denim keychain wristlet with pearl and crystal detailing — stylish, practical, and totally handmade. Wraps around your wrist for easy access to your keys.",
+        personal:["Denim colour preference","Charm or crystal colour preference"],
+        care:"Spot clean only. Avoid water and machine washing."
+      },
+      "Bag Tag": {
+        category:"Charms & Tags", catColor:"var(--peach)", price:199,
+        emoji:"🏷️", emojiBg:"var(--peach)",
+        desc:"Add personality to any school bag, travel bag, or tote with a custom handmade personalised tag. Makes bags instantly recognisable and uniquely yours.",
+        personal:["Name or text to personalise","Design theme or colour preference"],
+        care:"Keep away from water. Handle with care."
+      },
+      "Kiltpin": {
+        category:"Charms & Tags", catColor:"var(--peach)", price:99,
+        emoji:"📌", emojiBg:"var(--peach)",
+        desc:"Unique handmade kiltpins — a distinctive accessory for bags, jackets, and school bags. A fun way for kids to show off their personality.",
+        personal:["Design preference or theme"],
+        care:"Keep away from water."
+      },
+      "Kids Pen Stand": {
+        category:"Stationery", catColor:"var(--lavender)", price:299,
+        img:"images/pen-stand-safari.jpg",
+        desc:"Transparent pen stand with cute character designs and fluffy toppers — perfect for any kid's desk. Makes desk time more fun and keeps things organised.",
+        personal:["Character or theme (e.g. safari, unicorn, dinosaur)","Child's name to personalise"],
+        care:"Wipe clean with a damp cloth. Keep away from liquids."
+      },
+      "Designed Pen": {
+        category:"Stationery", catColor:"var(--lavender)", price:149,
+        img:"images/pen-stand-words.jpg",
+        desc:"Sparkly rhinestone pens with cute character toppers — a fun gift for any child. These write smoothly and are stunning to look at on any desk.",
+        personal:["Pen topper character preference","Rhinestone colour if applicable"],
+        care:"Do not immerse in water. Handle pen topper gently."
+      },
+      "Notebook": {
+        category:"Stationery", catColor:"var(--lavender)", price:249,
+        emoji:"📔", emojiBg:"var(--lavender)",
+        desc:"Beautifully crafted notebook with a handmade decorated cover — ideal for journaling, school notes, or gifting. Each cover is unique.",
+        personal:["Name or message for the cover","Colour or design theme preference"],
+        care:"Keep dry. Store flat when not in use."
+      },
+      "Kids Mini Bag (Pink - Unicorn)": {
+        category:"Bags", catColor:"var(--pink)", price:599,
+        img:"images/bag-unicorn.jpg",
+        desc:"Adorable pink corduroy sling bag featuring a sequin unicorn patch and charm accessories. The perfect bag for little ones to carry their essentials in style.",
+        personal:["Name tag or personalised charm to add","Strap length preference (child's age helps)"],
+        care:"Spot clean with a damp cloth. Do not machine wash."
+      },
+      "Kids Mini Bag (Cream - Cupcake)": {
+        category:"Bags", catColor:"var(--pink)", price:599,
+        img:"images/bag-cupcake.jpg",
+        desc:"Sweet cream corduroy sling bag with a glitter cupcake patch and cute charm. A soft, stylish little bag for the sweetest kids.",
+        personal:["Name tag or personalised charm to add","Strap length preference"],
+        care:"Spot clean with a damp cloth. Do not machine wash."
+      },
+      "Kids Mini Bag (Sage - Sports)": {
+        category:"Bags", catColor:"var(--pink)", price:599,
+        img:"images/bag-sage.jpg",
+        desc:"Cool sage corduroy sling bag with kiltpin detail and a sporty beaded charm. A great pick for kids who love a casual, laid-back look.",
+        personal:["Name tag or personalised charm to add","Strap length preference"],
+        care:"Spot clean with a damp cloth. Do not machine wash."
+      },
+      "Personalised Tumbler": {
+        category:"Drinkware", catColor:"var(--sky)", price:599,
+        emoji:"🥤", emojiBg:"var(--sky)",
+        desc:"Customised tumbler with your child's name, initials, or favourite design. Great for school, travel, or as a thoughtful personalised gift.",
+        personal:["Name or text to print","Design theme or character preference","Colour preference"],
+        care:"Hand wash only. Do not microwave or put in dishwasher."
+      },
+      "Handpainted Mug": {
+        category:"Drinkware", catColor:"var(--sky)", price:399,
+        emoji:"☕", emojiBg:"var(--sky)",
+        desc:"Hand-painted ceramic mug — each one a unique piece of art. A warm, personalised addition to any morning routine or a beautiful gift.",
+        personal:["Name or message to paint","Design style or theme preference"],
+        care:"Hand wash gently. Avoid soaking. Do not microwave."
+      },
+      "Handcrafted Clock": {
+        category:"Home & Decor", catColor:"var(--mint)", price:899,
+        emoji:"🕰️", emojiBg:"var(--mint)",
+        desc:"A beautiful handcrafted wall clock that adds warmth and personality to any room. Each clock is made by hand and can be personalised with a family name or message.",
+        personal:["Name or message to add","Colour theme preference for the clock face"],
+        care:"Dust with a dry cloth. Avoid moisture. Handle with care during installation."
+      },
+      "Handmade Tray": {
+        category:"Home & Decor", catColor:"var(--mint)", price:699,
+        emoji:"🫙", emojiBg:"var(--mint)",
+        desc:"A decorative handmade tray with artistic painting and detail — functional, beautiful, and a perfect gift or addition to your own home.",
+        personal:["Design or colour theme preference","Text or name to add (optional)"],
+        care:"Wipe clean with a dry cloth. Not suitable for food use."
+      },
+      "Mobile Cover": {
+        category:"Travel", catColor:"var(--lavender)", price:349,
+        emoji:"📲", emojiBg:"var(--lavender)",
+        desc:"Custom-designed phone cover that blends creativity with everyday utility. Tell us your phone model and design preference and we'll handcraft a cover for you.",
+        personal:["Phone model (brand and exact model name)","Design theme or art preference"],
+        care:"Wipe clean with a dry cloth. Avoid prolonged sun exposure."
+      },
+      "Passport Cover": {
+        category:"Travel", catColor:"var(--lavender)", price:349,
+        emoji:"✈️", emojiBg:"var(--lavender)",
+        desc:"Stylish handmade passport cover — a perfect travel companion. Each one is unique, beautifully designed, and makes your documents easy to find in any bag.",
+        personal:["Design theme or colour preference","Initial or name to add (optional)"],
+        care:"Keep clean and dry. Wipe with a damp cloth if needed."
+      }
+    };
+
+    // ── Quick view modal ──
+    const modal = document.getElementById('product-modal');
+
+    function openModal(name) {
+      const d = PRODUCT_DATA[name];
+      if (!d) return;
+
+      // Image or emoji
+      const imgCol = document.getElementById('modal-img-col');
+      if (d.img) {
+        imgCol.innerHTML = `<img src="${d.img}" alt="${name}" style="width:100%;height:100%;object-fit:cover;display:block;">`;
+      } else {
+        imgCol.innerHTML = `<div style="height:100%;min-height:380px;display:flex;align-items:center;justify-content:center;font-size:6rem;background:${d.emojiBg};">${d.emoji}</div>`;
+      }
+
+      // Details
+      const badge = document.getElementById('modal-badge');
+      badge.textContent = d.category;
+      badge.style.background = d.catColor;
+
+      document.getElementById('modal-title').textContent = name;
+      document.getElementById('modal-price').textContent = '₹' + d.price;
+      document.getElementById('modal-desc').textContent = d.desc;
+
+      const pList = document.getElementById('modal-personal-list');
+      pList.innerHTML = d.personal.map(o => `<li>${o}</li>`).join('');
+
+      document.getElementById('modal-care').textContent = d.care;
+
+      // Wire the add-to-cart button
+      const addBtn = document.getElementById('modal-add-btn');
+      addBtn.dataset.name = name;
+      addBtn.dataset.price = d.price;
+      addBtn.dataset.category = d.category;
+      addBtn.className = 'btn btn-cart';
+      addBtn.style.cssText = 'width:100%;justify-content:center;margin-top:1.25rem;';
+      addBtn.textContent = '+ Add to cart';
+
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+    // Quick view buttons (event delegation)
+    document.addEventListener('click', (e) => {
+      const qv = e.target.closest('[data-qv]');
+      if (qv) { e.preventDefault(); e.stopPropagation(); openModal(qv.dataset.qv); }
+    });
+
+    // ── Category filter ──
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const cat = btn.dataset.cat;
-        productCards.forEach(card => {
-          card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
-        });
+
+    function applyFilter(cat) {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      const btn = document.querySelector(`.filter-btn[data-cat="${cat}"]`) || document.querySelector('.filter-btn[data-cat="all"]');
+      if (btn) btn.classList.add('active');
+      productCards.forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
       });
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => applyFilter(btn.dataset.cat));
     });
+
+    // Apply filter from URL param (e.g. from homepage collection links)
+    const urlCat = new URLSearchParams(window.location.search).get('cat');
+    if (urlCat) applyFilter(urlCat);
   </script>
   <script src="cart.js"></script>
 </body>
