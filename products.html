@@ -6,14 +6,8 @@
   <title>Products — Life on a Canvas</title>
   <meta name="description" content="Browse all handmade personalised products — charms, keychains, pen stands, bags and more. Ships pan-India." />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Google Analytics — replace G-XXXXXXXXXX with your real Measurement ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 </head>
 <body>
 
@@ -44,102 +38,89 @@
   </header>
 
   <main>
-
     <section class="container page-hero">
       <div class="eyebrow">Handmade collection</div>
       <h1>All products</h1>
-      <p class="lead">Every piece is handmade and can be personalised — just mention your name or design preference when you order on WhatsApp.</p>
+      <p class="lead">Add as many items as you like, then order everything at once on WhatsApp — no need to message separately for each product.</p>
     </section>
 
-    <section class="container section" style="padding-top: 0;">
+    <section class="container section" style="padding-top:0;">
 
-      <!-- FILTER BAR -->
       <div class="filter-bar">
         <button class="filter-btn active" data-cat="all">All</button>
-        <button class="filter-btn" data-cat="Charms &amp; Tags">Charms &amp; Tags</button>
+        <button class="filter-btn" data-cat="Charms and Tags">Charms &amp; Tags</button>
         <button class="filter-btn" data-cat="Stationery">Stationery</button>
         <button class="filter-btn" data-cat="Bags">Bags</button>
         <button class="filter-btn" data-cat="Drinkware">Drinkware</button>
-        <button class="filter-btn" data-cat="Home &amp; Decor">Home &amp; Decor</button>
+        <button class="filter-btn" data-cat="Home and Decor">Home &amp; Decor</button>
         <button class="filter-btn" data-cat="Travel">Travel</button>
       </div>
 
-      <!-- PRODUCT GRID -->
       <div class="grid-4" id="product-grid">
 
-        <!-- ── CHARMS & TAGS ── -->
-        <div class="card product-card" data-cat="Charms &amp; Tags">
-          <div class="card-thumb">
-            <img src="images/mobile-charm-evileye.jpg" alt="Handmade Mobile Charm with evil eye" loading="lazy">
-          </div>
+        <!-- CHARMS & TAGS -->
+        <div class="card product-card" data-cat="Charms and Tags">
+          <div class="card-thumb"><img src="images/mobile-charm-evileye.jpg" alt="Handmade Mobile Charm" loading="lazy"></div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Mobile Charm</h3>
           <p>Handmade beaded phone charms — colourful, unique, and totally addictive.</p>
           <div class="price">₹149</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Mobile%20Charm.%20Please%20share%20available%20designs%20and%20colours." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Mobile Charm" data-price="149" data-category="Charms and Tags">+ Add to cart</button>
         </div>
 
-        <div class="card product-card" data-cat="Charms &amp; Tags">
-          <div class="card-thumb">
-            <img src="images/keychain-name.jpg" alt="Personalised name keychain with beads" loading="lazy">
-          </div>
+        <div class="card product-card" data-cat="Charms and Tags">
+          <div class="card-thumb"><img src="images/keychain-name.jpg" alt="Personalised name keychain" loading="lazy"></div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Keychain</h3>
           <p>Personalised keychains with your name or initials in wooden letter beads.</p>
           <div class="price">₹99</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20personalised%20Keychain.%20Please%20share%20design%20options." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Keychain" data-price="99" data-category="Charms and Tags">+ Add to cart</button>
         </div>
 
-        <div class="card product-card" data-cat="Charms &amp; Tags">
-          <div class="card-thumb">
-            <img src="images/keychain-denim.jpg" alt="Denim keychain wristlet with pearls" loading="lazy">
-          </div>
+        <div class="card product-card" data-cat="Charms and Tags">
+          <div class="card-thumb"><img src="images/keychain-denim.jpg" alt="Denim keychain wristlet" loading="lazy"></div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Keychain Wristlet</h3>
           <p>Denim keychain wristlet with pearl and crystal detailing — stylish and practical.</p>
           <div class="price">₹199</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Keychain%20Wristlet." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Keychain Wristlet" data-price="199" data-category="Charms and Tags">+ Add to cart</button>
         </div>
 
-        <div class="card product-card" data-cat="Charms &amp; Tags">
+        <div class="card product-card" data-cat="Charms and Tags">
           <div class="card-thumb emoji" style="background:var(--peach);">🏷️</div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Bag Tag</h3>
           <p>Add personality to any bag with a custom handmade personalised tag.</p>
           <div class="price">₹199</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Bag%20Tag." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Bag Tag" data-price="199" data-category="Charms and Tags">+ Add to cart</button>
         </div>
 
-        <div class="card product-card" data-cat="Charms &amp; Tags">
+        <div class="card product-card" data-cat="Charms and Tags">
           <div class="card-thumb emoji" style="background:var(--peach);">📌</div>
           <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
           <h3>Kiltpin</h3>
-          <p>Unique handmade kiltpins — a distinctive handcrafted accessory for any outfit or bag.</p>
+          <p>Unique handmade kiltpins — a distinctive accessory for any outfit or bag.</p>
           <div class="price">₹99</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Kiltpin." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Kiltpin" data-price="99" data-category="Charms and Tags">+ Add to cart</button>
         </div>
 
-        <!-- ── STATIONERY ── -->
+        <!-- STATIONERY -->
         <div class="card product-card" data-cat="Stationery">
-          <div class="card-thumb">
-            <img src="images/pen-stand-safari.jpg" alt="Kids pen stand with safari animal design" loading="lazy">
-          </div>
+          <div class="card-thumb"><img src="images/pen-stand-safari.jpg" alt="Kids pen stand safari theme" loading="lazy"></div>
           <span class="category-badge" style="background:var(--lavender);">Stationery</span>
           <h3>Kids Pen Stand</h3>
           <p>Transparent pen stand with cute designs and fluffy character toppers — perfect for any kid's desk.</p>
           <div class="price">₹299</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Kids%20Pen%20Stand.%20Please%20share%20available%20designs." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Kids Pen Stand" data-price="299" data-category="Stationery">+ Add to cart</button>
         </div>
 
         <div class="card product-card" data-cat="Stationery">
-          <div class="card-thumb">
-            <img src="images/pen-stand-words.jpg" alt="Designed pen with glitter and topper" loading="lazy">
-          </div>
+          <div class="card-thumb"><img src="images/pen-stand-words.jpg" alt="Sparkly designed pen" loading="lazy"></div>
           <span class="category-badge" style="background:var(--lavender);">Stationery</span>
           <h3>Designed Pen</h3>
           <p>Sparkly rhinestone pens with cute character toppers — a fun gift for any child.</p>
           <div class="price">₹149</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20some%20Designed%20Pens." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Designed Pen" data-price="149" data-category="Stationery">+ Add to cart</button>
         </div>
 
         <div class="card product-card" data-cat="Stationery">
@@ -148,51 +129,45 @@
           <h3>Notebook</h3>
           <p>Beautifully crafted notebook with a handmade cover — for journaling or gifting.</p>
           <div class="price">₹249</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20personalised%20Notebook." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Notebook" data-price="249" data-category="Stationery">+ Add to cart</button>
         </div>
 
-        <!-- ── BAGS ── -->
+        <!-- BAGS -->
         <div class="card product-card" data-cat="Bags">
-          <div class="card-thumb">
-            <img src="images/bag-unicorn.jpg" alt="Pink kids sling bag with unicorn patch" loading="lazy">
-          </div>
+          <div class="card-thumb"><img src="images/bag-unicorn.jpg" alt="Pink kids mini bag unicorn patch" loading="lazy"></div>
           <span class="category-badge" style="background:var(--pink);">Bags</span>
           <h3>Kids Mini Bag — Pink</h3>
-          <p>Adorable corduroy sling bag with a sequin unicorn patch and charm accessories. Perfect for little ones.</p>
+          <p>Adorable corduroy sling bag with a sequin unicorn patch and charm accessories.</p>
           <div class="price">₹599</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20the%20Pink%20Unicorn%20Kids%20Mini%20Bag." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Kids Mini Bag (Pink - Unicorn)" data-price="599" data-category="Bags">+ Add to cart</button>
         </div>
 
         <div class="card product-card" data-cat="Bags">
-          <div class="card-thumb">
-            <img src="images/bag-cupcake.jpg" alt="Cream kids sling bag with cupcake sequin patch" loading="lazy">
-          </div>
+          <div class="card-thumb"><img src="images/bag-cupcake.jpg" alt="Cream kids mini bag cupcake patch" loading="lazy"></div>
           <span class="category-badge" style="background:var(--pink);">Bags</span>
           <h3>Kids Mini Bag — Cream</h3>
-          <p>Sweet cream corduroy sling bag with a glitter cupcake patch and cute charm hanging.</p>
+          <p>Sweet cream corduroy sling bag with a glitter cupcake patch and cute charm.</p>
           <div class="price">₹599</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20the%20Cream%20Cupcake%20Kids%20Mini%20Bag." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Kids Mini Bag (Cream - Cupcake)" data-price="599" data-category="Bags">+ Add to cart</button>
         </div>
 
         <div class="card product-card" data-cat="Bags">
-          <div class="card-thumb">
-            <img src="images/bag-sage.jpg" alt="Sage green kids sling bag with sports charm" loading="lazy">
-          </div>
+          <div class="card-thumb"><img src="images/bag-sage.jpg" alt="Sage kids mini bag sports charm" loading="lazy"></div>
           <span class="category-badge" style="background:var(--pink);">Bags</span>
           <h3>Kids Mini Bag — Sage</h3>
-          <p>Cool sage corduroy sling bag with kiltpin detail and a sporty beaded charm accessory.</p>
+          <p>Cool sage corduroy sling bag with kiltpin detail and a sporty beaded charm.</p>
           <div class="price">₹599</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20the%20Sage%20Kids%20Mini%20Bag." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Kids Mini Bag (Sage - Sports)" data-price="599" data-category="Bags">+ Add to cart</button>
         </div>
 
-        <!-- ── DRINKWARE ── -->
+        <!-- DRINKWARE -->
         <div class="card product-card" data-cat="Drinkware">
           <div class="card-thumb emoji" style="background:var(--sky);">🥤</div>
           <span class="category-badge" style="background:var(--sky);">Drinkware</span>
           <h3>Personalised Tumbler</h3>
           <p>Customised with your child's name or favourite design. Perfect for school, travel, or gifting.</p>
           <div class="price">₹599</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Personalised%20Tumbler.%20Please%20share%20customisation%20options." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Personalised Tumbler" data-price="599" data-category="Drinkware">+ Add to cart</button>
         </div>
 
         <div class="card product-card" data-cat="Drinkware">
@@ -201,36 +176,36 @@
           <h3>Handpainted Mug</h3>
           <p>Hand-painted ceramic mug — a warm, personalised addition to any morning routine.</p>
           <div class="price">₹399</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Handpainted%20Mug." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Handpainted Mug" data-price="399" data-category="Drinkware">+ Add to cart</button>
         </div>
 
-        <!-- ── HOME & DECOR ── -->
-        <div class="card product-card" data-cat="Home &amp; Decor">
+        <!-- HOME & DECOR -->
+        <div class="card product-card" data-cat="Home and Decor">
           <div class="card-thumb emoji" style="background:var(--mint);">🕰️</div>
           <span class="category-badge" style="background:var(--mint);">Home &amp; Decor</span>
           <h3>Handcrafted Clock</h3>
           <p>A beautiful wall clock that adds warmth and personality to any room.</p>
           <div class="price">₹899</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Handcrafted%20Clock.%20Please%20share%20available%20designs." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Handcrafted Clock" data-price="899" data-category="Home and Decor">+ Add to cart</button>
         </div>
 
-        <div class="card product-card" data-cat="Home &amp; Decor">
+        <div class="card product-card" data-cat="Home and Decor">
           <div class="card-thumb emoji" style="background:var(--mint);">🫙</div>
           <span class="category-badge" style="background:var(--mint);">Home &amp; Decor</span>
           <h3>Handmade Tray</h3>
           <p>A decorative serving tray with artistic detail — functional, beautiful, and gift-worthy.</p>
           <div class="price">₹699</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Handmade%20Tray." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Handmade Tray" data-price="699" data-category="Home and Decor">+ Add to cart</button>
         </div>
 
-        <!-- ── TRAVEL ── -->
+        <!-- TRAVEL -->
         <div class="card product-card" data-cat="Travel">
           <div class="card-thumb emoji" style="background:var(--lavender);">📲</div>
           <span class="category-badge" style="background:var(--lavender);">Travel</span>
           <h3>Mobile Cover</h3>
           <p>Custom-designed phone cover that blends creativity with everyday utility.</p>
           <div class="price">₹349</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Mobile%20Cover.%20Please%20share%20designs%20and%20phone%20models%20supported." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Mobile Cover" data-price="349" data-category="Travel">+ Add to cart</button>
         </div>
 
         <div class="card product-card" data-cat="Travel">
@@ -239,20 +214,19 @@
           <h3>Passport Cover</h3>
           <p>Stylish handmade passport cover — a perfect travel companion with artistic detail.</p>
           <div class="price">₹349</div>
-          <a class="btn btn-sm btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20order%20a%20Passport%20Cover." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Passport Cover" data-price="349" data-category="Travel">+ Add to cart</button>
         </div>
 
       </div>
     </section>
 
     <section class="container section" style="padding-top:0;">
-      <div class="card" style="padding:2rem; background:linear-gradient(135deg,var(--pink) 0%,var(--cream) 60%,var(--sky) 100%); text-align:center;">
+      <div class="card" style="padding:2rem;background:linear-gradient(135deg,var(--pink) 0%,var(--cream) 60%,var(--sky) 100%);text-align:center;">
         <h2 style="margin-bottom:0.5rem;">Don't see exactly what you want?</h2>
-        <p style="color:var(--muted); margin-bottom:1.25rem;">We love doing custom orders — reach out on WhatsApp and we'll make something just for you.</p>
+        <p style="color:var(--muted);margin-bottom:1.25rem;">We love doing custom orders — reach out on WhatsApp and we'll make something just for you.</p>
         <a class="btn btn-wa" href="https://wa.me/919830167714?text=Hi!%20I%27d%20like%20to%20discuss%20a%20custom%20order." target="_blank" rel="noopener noreferrer">Discuss a custom order</a>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -268,9 +242,9 @@
   </footer>
 
   <script>
+    // Category filter
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
-
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         filterBtns.forEach(b => b.classList.remove('active'));
@@ -282,6 +256,6 @@
       });
     });
   </script>
-
+  <script src="cart.js"></script>
 </body>
 </html>
