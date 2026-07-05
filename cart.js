@@ -60,6 +60,7 @@
       }
     });
     msg += `\n*Total: ${fmt(total())}*`;
+    msg += "\n(Shipping charges are extra, based on delivery location — will be confirmed separately)";
     msg += "\n\nPlease confirm availability and share payment details. Thank you!";
     window.open(`https://wa.me/${SELLER}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
   }

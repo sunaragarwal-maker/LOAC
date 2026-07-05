@@ -203,9 +203,6 @@
             <a href="https://wa.me/919830167714" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 0C5.374 0 0 5.373 0 12c0 2.116.554 4.103 1.523 5.824L.057 23.94l6.304-1.653A11.944 11.944 0 0012.004 24C18.629 24 24 18.627 24 12S18.629 0 12.004 0zm0 21.818a9.814 9.814 0 01-4.999-1.37l-.36-.213-3.721.975.994-3.62-.235-.373a9.79 9.79 0 01-1.5-5.217c0-5.418 4.411-9.818 9.821-9.818 5.413 0 9.818 4.4 9.818 9.818 0 5.415-4.405 9.818-9.818 9.818z"/></svg>
             </a>
-            <a href="mailto:lifeonacanvas@gmail.com" class="social-icon" aria-label="Email">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,14 22,4"/></svg>
-            </a>
           </div>
         </div>
         <div>
@@ -258,6 +255,7 @@
       text += `\n*My WhatsApp:* ${phone || 'Not provided'}`;
       if (personal) text += `\n*Personalisation:* ${personal}`;
       if (msg)      text += `\n*Note:* ${msg}`;
+      text += `\n\n(Shipping charges are extra, based on delivery location — will be confirmed separately)`;
 
       window.open(`https://wa.me/${SELLER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
 
