@@ -17,14 +17,15 @@
 </head>
 <body>
 
-  <div class="announcement-bar" id="rakhi-banner">
+  <!-- SEASONAL BANNER: auto-shows the nearest upcoming festival, see festival-banner.js -->
+  <div class="announcement-bar" id="festival-banner" style="display:none;">
     <div class="container announcement-inner">
-      <span>🎀 Raksha Bandhan is <strong>August 9</strong> — order by August 2 for guaranteed delivery!</span>
+      <span id="festival-banner-text"></span>
       <a class="announcement-cta" href="products.html">Shop gifts →</a>
-      <button class="announcement-close" aria-label="Dismiss" onclick="document.getElementById('rakhi-banner').style.display='none';try{localStorage.setItem('rakhi-dismissed','1');}catch(e){}">✕</button>
+      <button class="announcement-close" aria-label="Dismiss" id="festival-banner-close">✕</button>
     </div>
   </div>
-  <script>if(localStorage.getItem('rakhi-dismissed'))document.getElementById('rakhi-banner').style.display='none';</script>
+  <script src="festival-banner.js"></script>
 
   <header class="site-header">
     <div class="container navbar">
@@ -61,8 +62,8 @@
             <ul>
               <li>Quick replies on availability and pricing</li>
               <li>Personalised guidance for custom requests</li>
-              <li>Payment via UPI or bank transfer</li>
-              <li>Pan-India delivery in 5–7 business days</li>
+              <li>Payment via UPI only</li>
+              <li>Pan-India delivery in 5–7 business days (shipping charged extra)</li>
               <li>Gift-ready packaging on every order</li>
             </ul>
           </div>
@@ -79,7 +80,7 @@
               <div class="trust-item" style="display:flex; align-items:flex-start; gap:1rem; text-align:left;">
                 <div class="t-icon">💳</div>
                 <div>
-                  <strong>UPI &amp; bank transfer</strong>
+                  <strong>UPI only</strong>
                   <p>Payment details shared on WhatsApp post-confirmation.</p>
                 </div>
               </div>
@@ -228,9 +229,9 @@
         <div>
           <span class="footer-col-title">Policies</span>
           <ul class="footer-nav-list">
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Refund Policy</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
