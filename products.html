@@ -912,7 +912,7 @@
       // Image or emoji
       const imgCol = document.getElementById('modal-img-col');
       if (d.img) {
-        imgCol.innerHTML = `<img src="${d.img}" alt="${name}" style="width:100%;height:100%;object-fit:cover;display:block;">`;
+        imgCol.innerHTML = `<img src="${d.img}" alt="${name}" style="width:100%;height:100%;object-fit:contain;display:block;">`;
       } else {
         imgCol.innerHTML = `<div style="height:100%;min-height:380px;display:flex;align-items:center;justify-content:center;font-size:6rem;background:${d.emojiBg};">${d.emoji}</div>`;
       }
