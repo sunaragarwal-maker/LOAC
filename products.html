@@ -191,6 +191,30 @@
           <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Pearl Bag Charm" data-price="199" data-category="Charms and Tags">+ Add to cart</button>
         </div>
 
+        <div class="card product-card" data-cat="Charms and Tags">
+          <div class="card-thumb">
+            <img src="images/charm-lucky-bear.jpg" alt="Lucky bear bag charm keychain" loading="lazy">
+            <button class="qv-btn" data-qv="Bag Charm (Lucky Bear)">Quick view</button>
+          </div>
+          <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
+          <h3>Bag Charm — Lucky Bear</h3>
+          <p>Pastel bead keychain with a "Luck" charm, bear pendant, flower, and a crochet daisy accent.</p>
+          <div class="price">₹179</div>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Bag Charm (Lucky Bear)" data-price="179" data-category="Charms and Tags">+ Add to cart</button>
+        </div>
+
+        <div class="card product-card" data-cat="Charms and Tags">
+          <div class="card-thumb">
+            <img src="images/wristlet-name-strawberry.jpg" alt="Personalised name wristlet with strawberry charm" loading="lazy">
+            <button class="qv-btn" data-qv="Personalised Name Wristlet">Quick view</button>
+          </div>
+          <span class="category-badge" style="background:var(--peach);">Charms &amp; Tags</span>
+          <h3>Personalised Name Wristlet</h3>
+          <p>Pearl and tile-bead wristlet spelling out your name, with a strawberry charm and pom-pom detail.</p>
+          <div class="price">₹249</div>
+          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Personalised Name Wristlet" data-price="249" data-category="Charms and Tags">+ Add to cart</button>
+        </div>
+
         <!-- STATIONERY -->
         <div class="card product-card" data-cat="Stationery">
           <div class="card-thumb">
@@ -315,27 +339,15 @@
 
         <!-- DRINKWARE -->
         <div class="card product-card" data-cat="Drinkware">
-          <div class="card-thumb emoji" style="background:var(--sky);">
-            🥤
+          <div class="card-thumb">
+            <img src="images/tumbler-candy-castle.jpg" alt="Personalised glass tumbler with candy castle design" loading="lazy">
             <button class="qv-btn" data-qv="Personalised Tumbler">Quick view</button>
           </div>
           <span class="category-badge" style="background:var(--sky);">Drinkware</span>
           <h3>Personalised Tumbler</h3>
-          <p>Customised with your child's name or favourite design. Perfect for school, travel, or gifting.</p>
+          <p>Glass tumbler with bamboo lid and glass straw, customised with your child's name or favourite design.</p>
           <div class="price">₹599</div>
           <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Personalised Tumbler" data-price="599" data-category="Drinkware">+ Add to cart</button>
-        </div>
-
-        <div class="card product-card" data-cat="Drinkware">
-          <div class="card-thumb emoji" style="background:var(--sky);">
-            ☕
-            <button class="qv-btn" data-qv="Handpainted Mug">Quick view</button>
-          </div>
-          <span class="category-badge" style="background:var(--sky);">Drinkware</span>
-          <h3>Handpainted Mug</h3>
-          <p>Hand-painted ceramic mug — a warm, personalised addition to any morning routine.</p>
-          <div class="price">₹399</div>
-          <button class="btn btn-sm btn-cart" data-add-to-cart data-name="Handpainted Mug" data-price="399" data-category="Drinkware">+ Add to cart</button>
         </div>
 
         <!-- HOME & DECOR -->
@@ -562,6 +574,20 @@
         personal:["Pearl size preference","Pom-pom colour preference"],
         care:"Avoid water. Handle gently to preserve pearl strings."
       },
+      "Bag Charm (Lucky Bear)": {
+        category:"Charms & Tags", catColor:"var(--peach)", price:179,
+        img:"images/charm-lucky-bear.jpg",
+        desc:"A cheerful pastel bead keychain featuring a polka-dot disc with a \"Luck\" charm, a tiny bear pendant, a flower, and a crochet daisy dangling alongside.",
+        personal:["Bead colour palette preference","Charm/pendant style preference"],
+        care:"Avoid water. Handle gently to preserve bead strings."
+      },
+      "Personalised Name Wristlet": {
+        category:"Charms & Tags", catColor:"var(--peach)", price:249,
+        img:"images/wristlet-name-strawberry.jpg",
+        desc:"A pearl and tile-bead wristlet spelling out your name in colourful letter beads, finished with a strawberry acrylic charm, teal chain, and a soft pom-pom.",
+        personal:["Name or initials to feature","Bead colour palette preference"],
+        care:"Avoid water. Handle gently to preserve bead strings."
+      },
       "Beaded Charm Pen (Koala)": {
         category:"Stationery", catColor:"var(--lavender)", price:250,
         img:"images/beaded-pen-koala.jpg",
@@ -634,17 +660,10 @@
       },
       "Personalised Tumbler": {
         category:"Drinkware", catColor:"var(--sky)", price:599,
-        emoji:"🥤", emojiBg:"var(--sky)",
-        desc:"Customised tumbler with your child's name, initials, or favourite design. Great for school, travel, or as a thoughtful personalised gift.",
+        img:"images/tumbler-candy-castle.jpg",
+        desc:"A glass tumbler with a bamboo lid and glass straw, customised with your child's name, initials, or favourite design. Great for school, travel, or as a thoughtful personalised gift.",
         personal:["Name or text to print","Design theme or character preference","Colour preference"],
         care:"Hand wash only. Do not microwave or put in dishwasher."
-      },
-      "Handpainted Mug": {
-        category:"Drinkware", catColor:"var(--sky)", price:399,
-        emoji:"☕", emojiBg:"var(--sky)",
-        desc:"Hand-painted ceramic mug — each one a unique piece of art. A warm, personalised addition to any morning routine or a beautiful gift.",
-        personal:["Name or message to paint","Design style or theme preference"],
-        care:"Hand wash gently. Avoid soaking. Do not microwave."
       },
       "Handcrafted Clock": {
         category:"Home & Decor", catColor:"var(--mint)", price:899,
