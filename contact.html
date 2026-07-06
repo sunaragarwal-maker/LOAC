@@ -6,6 +6,8 @@
   <title>Contact &amp; Order — Life on a Canvas</title>
   <meta name="description" content="Order handmade personalised gifts directly through WhatsApp. Ships pan-India in 5–7 days." />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-client.js"></script>
   <!-- Google Analytics — replace G-XXXXXXXXXX with your real Measurement ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
@@ -276,6 +278,20 @@
       text += `\n\n(Shipping charges are extra, based on delivery location — will be confirmed separately)`;
 
       window.open(`https://wa.me/${SELLER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+
+      // Save a record of the order to Supabase (fire-and-forget — never blocks the WhatsApp flow above).
+      if (window.loacSupabase) {
+        window.loacSupabase.from('orders').insert({
+          name: name,
+          whatsapp: phone,
+          product: product || null,
+          personalisation: personal || null,
+          message: msg || null,
+          source: 'contact_form',
+        }).then(({ error }) => {
+          if (error) console.error('Could not save order to Supabase:', error);
+        });
+      }
 
       // Show confirmation screen
       document.getElementById('order-form').style.display = 'none';
