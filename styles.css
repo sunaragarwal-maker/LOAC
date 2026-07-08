@@ -153,12 +153,12 @@ h3 { font-size: 1.1rem; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
 .collections-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; }
 .collection-card {
   position: relative; border-radius: var(--r-card); overflow: hidden;
-  display: block; aspect-ratio: 3/4; background: var(--mint);
+  display: block; aspect-ratio: 3/4; background: var(--cream-2);
   text-decoration: none;
   transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .collection-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
-.collection-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.collection-card img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .collection-card:hover img { transform: scale(1.09); }
 .collection-overlay {
   position: absolute; inset: 0;
@@ -191,7 +191,7 @@ h3 { font-size: 1.1rem; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
   background-size: 200% 100%; animation: shimmer 1.6s ease-in-out infinite;
 }
 .card-thumb img, .card-thumb.emoji { animation: none; }
-.card-thumb img { width: 100%; height: 210px; object-fit: cover; object-position: center; display: block; transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.card-thumb img { width: 100%; height: 210px; object-fit: contain; object-position: center; display: block; transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .card:hover .card-thumb img { transform: scale(1.08); }
 .card-thumb.emoji { min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.4rem; font-size: 2.4rem; }
 
